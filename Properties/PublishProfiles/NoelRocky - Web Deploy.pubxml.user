@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAiBTEQbWpN022nDvJr0GEMgAAAAACAAAAAAAQZgAAAAEAACAAAAC94iPC/pvka8zrFe5e7tZE6K1JUEM8Sxngg6R9TaCM4gAAAAAOgAAAAAIAACAAAAC20+R3QY8GsDMWGQqg5s/aA7fs0Q0onxbl/5YqnDsf64AAAACX4XlM7JIuqvOrIz/rHSuZKFPvSJrRc12rG1OLfd9DFvyNfTSk7VODn5iLfA9FdcpR6aFA0/IifKdhxXyFjmS4TzSgY08pAlFOm8YcURGKwcabll87FuIgtKfLXfwdgwlDLoqFu7xSKk3FqgREhOjECt+riBcUiWra6OVfFOpSI0AAAAAFkUjLeDipSIGB2k1t3i0drIG9qx/sUYWyNsLA6U5EXJYcaYPjBECKLEdAHMHBi6q32LKNnumIYvHEMgBgLDye</EncryptedPassword>
+    <History>True|2022-11-16T11:51:57.2053620Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:noelrockydbserver.database.windows.net,1433%3bInitial Catalog=NoelRocky_db%3bUser Id=noel%40noelrockydbserver%3bPassword=qwe123qwe123!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="NoelRocky.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:noelrockydbserver.database.windows.net,1433%3bInitial Catalog=NoelRocky_db%3bUser Id=noel%40noelrockydbserver%3bPassword=qwe123qwe123!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

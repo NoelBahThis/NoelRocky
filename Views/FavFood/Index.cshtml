@@ -1,0 +1,67 @@
+﻿<!--View     FavFood     Index-->
+@{
+    ViewData["Title"] = "Favourite Food";
+}
+
+<div class="container p-3">
+
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Favourite Food List</h2>
+        </div>
+
+
+
+        <div class="col-6 text-right">
+            Create new Fav Food
+        </div>
+    </div>
+    <br />
+
+    <div class="text-center">
+        
+            <table class="table table-bordered table-striped text-center" style="width:75%;margin-left:auto;margin-right:auto">
+                <thead>
+                    <tr>
+                        <th>
+                            Person Name
+                        </th>
+                        <th>
+                            Person Year
+                        </th>
+                        <th>
+                            Fav Food
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                @foreach (var obj in ViewBag.FavFoodList)
+                    {
+                        <tr>
+                            
+                                @foreach (var obj2 in ViewBag.PersonList)
+                                {
+                                    if(obj.PersonId == obj2.Id)
+                                    {
+                                    <td width="33%">
+                                        @obj2.Name
+                                    </td>
+                                    <td width="33%">
+                                        @obj2.Year
+                                    </td>
+                                    <td width="33%">
+                                        @obj.FavFoodItem
+                                    </td>
+                                    }
+                                }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+
+
+</div>
+
+
